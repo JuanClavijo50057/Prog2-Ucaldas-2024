@@ -9,7 +9,6 @@ Scanner input=new Scanner(System.in);
         System.out.println("Diga el indice que quiere eliminar");
         int posicion = input.nextInt();
         Arreglos.remove(posicion);
-        int tamaño_array=Arreglos.size();
     }
 
     public void agregar_array(ArrayList<String>Arreglos){
