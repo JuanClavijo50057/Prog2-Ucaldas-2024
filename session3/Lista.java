@@ -18,8 +18,7 @@ public class Lista {
             System.out.println("Ingrese de quien es la tarea");
             String encargado = scn.nextLine();
 
-            System.out.println(
-                    "Ingrese el estado de la tarea \n NOTA:Escoja algunas de estas tres opciones \nA) Activa \nB) En desarrollo \nc) Realizada");
+            System.out.println("Ingrese el estado de la tarea \n NOTA:Escoja algunas de estas tres opciones \nA) Activa \nB) En desarrollo \nc) Realizada");
             String estatus = scn.nextLine();
             boolean comprobar = false;
             while (!comprobar) {
@@ -27,8 +26,7 @@ public class Lista {
                 if (estatus.equals("Activa") || estatus.equals("En desarrollo") || estatus.equals("Realizada")) {
                     comprobar = true;
                 } else {
-                    System.out.println(
-                            "Coloque bien las especificaiones pedidas \nVuelva a ingresar el estado de la tarea");
+                    System.out.println("Coloque bien las especificaiones pedidas \nVuelva a ingresar el estado de la tarea");
                     estatus = scn.nextLine();
                 }
             }
@@ -42,8 +40,7 @@ public class Lista {
         System.out.println("Esto es una Lista de tareas: Agregue las primeros 5 tareas");
         inputDataUser(1);
         do {
-            System.out.println(
-                    "menu \nDiga 1 si: Quiere agregar otra tarea \nDiga 2 si: Quiere eliminar una tarea \nDiga 3 si: Quiere ver todas las tareas \nDiga 4 para finalizar \nDiga 5 si: requiere hacer cambios mas especificos");
+            System.out.println("menu \nDiga 1 si: Quiere agregar otra tarea \nDiga 2 si: Quiere eliminar una tarea \nDiga 3 si: Quiere ver todas las tareas \nDiga 4 para finalizar \nDiga 5 si: requiere hacer cambios mas especificos");
             int opcion = scn.nextInt();
             switch (opcion) {
 
@@ -89,8 +86,7 @@ public class Lista {
                     break;
 
                 case 5:
-                    System.out.println(
-                            "Ponga 1 para: cambiar el nombre \nPonga 2 para: cambiar la duracion \nPonga 3 para: cambiar de quien es la tarea \nPonga 4 para: cambiar el estado");
+                    System.out.println("Ponga 1 para: cambiar el nombre de la tarea \nPonga 2 para: cambiar la duracion \nPonga 3 para: cambiar de quien es la tarea \nPonga 4 para: cambiar el estado");
                     int opcion_cambios = scn.nextInt();
                     switch (opcion_cambios) {
                         case 1:
@@ -155,7 +151,7 @@ public class Lista {
                                 }
                             }
                             break;
-                            
+
                         case 4:
                             System.out.println("Ponga el estado inicial el cual desea cambiar");
                             scn.nextLine();
