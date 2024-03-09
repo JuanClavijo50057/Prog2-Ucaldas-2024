@@ -2,7 +2,6 @@ package session2;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Scanner;
 
 public class Main {
     static Exercise1 entero=new Exercise1();
@@ -19,21 +18,8 @@ public class Main {
         // Exercise 2 //
 
         ArrayList<String> Array_agregar = new ArrayList<>();
-        Scanner sss=new Scanner(System.in);
-        int verdad=0;
-          while (verdad==0) {
-            System.out.println("Diga 1 si quiere agregar elementos, por el contrario diga 2");
-            int escoger=sss.nextInt();
-            if (escoger==1) {
-                arr_list.agregar_array(Array_agregar);
-                System.out.println("¿Desea hacer otro cambio? si=0 o no=1");
-                verdad=sss.nextInt();
-            }else{
-                arr_list.eliminar_array(Array_agregar);
-                System.out.println("¿Desea hacer otro cambio? si=0 o no=1");
-                verdad=sss.nextInt();
-            }  
-          }
+        
+          arr_list.eliminar_y_agregar_array(Array_agregar);
           for (int i = 0; i < Array_agregar.size(); i++) {
             System.out.print(Array_agregar.get(i) + ",");   
         }
@@ -52,6 +38,7 @@ public class Main {
             }
             
         }
+    
 
         
     
